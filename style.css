@@ -119,6 +119,44 @@ header {
     }
 }
 
+@media screen and (max-width: 480px) {
+    
+    header {
+        height: auto;
+        
+        & .container {
+            max-width: 420px;
+        & nav {
+            flex-direction: column;
+
+            & ul {
+                flex-direction: column;
+               
+                & li {
+                    margin-right: 0px !important;
+                    margin: 20px 0px
+                }
+            }
+        }
+
+        & .header_info {
+
+
+            & .content_img {
+                position: inherit;
+                margin: 20px 0px;
+
+                & img {
+                    width: 500px;
+                    height: 300px;
+                }
+              
+            }
+        }
+    }
+    }
+}
+
 /*End header*/
 
 
