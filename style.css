@@ -141,6 +141,12 @@ header {
 
         & .header_info {
 
+            justify-content: center;
+            align-items: center;
+
+            & p {
+                font-size: 15px;
+            }
 
             & .content_img {
                 position: inherit;
