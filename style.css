@@ -213,3 +213,28 @@ header {
 
     }
 }
+
+@media screen and (max-width: 480px) {
+    
+    .content_more {
+        height: auto;
+        
+        & .container{
+            max-width: 420px;
+
+            & .content_more_info h1 {
+                font-weight: bold; 
+                text-shadow: 2px 2px 2px var(--black);
+                color: var(--white);
+            }
+
+            & .content_more_info p {
+               font-size: 15px;
+            }
+
+            & .content_more_info .content_more_button {
+                margin-bottom: 30px;
+             }
+        }
+    }
+}
