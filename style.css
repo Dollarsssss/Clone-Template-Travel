@@ -298,6 +298,7 @@ header {
     .content_top {
         height: auto;
         background-image: url();
+
         & .container {
             max-width: 420px;
 
@@ -361,12 +362,30 @@ header {
 }
 
 @media screen and (max-width: 480px) {
+
     .content_more2 {
         height: auto;
 
         & .container {
-
             height: auto;
+            max-width: 420px;
+
+            & .content_more2_info {
+                margin-top: 95px;
+
+                & h1 {
+
+                    font-size: 40px;
+                }
+
+                & p {
+                    
+                    margin-top: 60px;
+                    font-size: 15px;
+                  
+                }
+
+            }
         }
     }
 }
