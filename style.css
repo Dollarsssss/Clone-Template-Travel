@@ -251,9 +251,11 @@ header {
 
 .content_top {
     height: 800px;
+    background-color: var(--bgcolor);
     background-image: url(html-template-travel/assets/img/bg_section_2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
   
     & .container{
 
@@ -322,6 +324,7 @@ header {
 
 .content_more2 {
     height: 800px;
+    background-color: var(--bgcolor);
     background-image: url(html-template-travel/assets/img/bg_section_3.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -396,3 +399,10 @@ header {
 }
 
 /*End Content_more2*/
+
+/*Start Content_mid*/
+
+.content_mid {
+    height: 800px;
+    background-image: u
+}
