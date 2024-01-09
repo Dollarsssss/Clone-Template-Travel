@@ -254,7 +254,7 @@ header {
     background-image: url(html-template-travel/assets/img/bg_section_2.png);
     background-repeat: no-repeat;
     background-size: cover;
-
+  
     & .container{
 
         & .content_top_info {
@@ -290,6 +290,48 @@ header {
                 }
 
             }
+        }
+    }
+}
+
+.content_more2 {
+    height: 800px;
+    background-image: url(html-template-travel/assets/img/bg_section_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: 1px solid red;
+
+    & .container {
+        
+      
+        & .content_more2_info {
+           
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & h1 {
+
+                font-size: 90px;
+            
+            }
+
+            & .text_special{
+               display: flex;
+
+                & h1:nth-of-type(1) {
+                    text-decoration: underline;
+                    font-style: italic;
+                    margin-right: 22px ;
+                }
+            }
+
+            & p {
+                font-weight: bold;
+            }
+          
         }
     }
 }
