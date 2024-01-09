@@ -294,6 +294,26 @@ header {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .content_top {
+        height: auto;
+        background-image: url();
+        & .container {
+            max-width: 420px;
+
+            & .content_top_info {
+
+                & .content_top_card {
+                    margin-bottom: 20px;
+                }
+            
+            }
+        }
+
+    }
+    
+}
+
 .content_more2 {
     height: 800px;
     background-image: url(html-template-travel/assets/img/bg_section_3.png);
@@ -308,7 +328,7 @@ header {
       
         & .content_more2_info {
            
-            margin-top: 120px;
+            margin-top: 200px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -336,6 +356,17 @@ header {
                 font-size: 21px;
             }
           
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content_more2 {
+        height: auto;
+
+        & .container {
+
+            height: auto;
         }
     }
 }
