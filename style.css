@@ -404,5 +404,5 @@ header {
 
 .content_mid {
     height: 800px;
-    background-image: u
+    background-color: var(--bgcolor);
 }
