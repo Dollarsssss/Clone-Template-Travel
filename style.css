@@ -315,6 +315,11 @@ header {
     
 }
 
+/*End Content_top*/
+
+
+/*Start Content_more2*/
+
 .content_more2 {
     height: 800px;
     background-image: url(html-template-travel/assets/img/bg_section_3.png);
@@ -389,3 +394,5 @@ header {
         }
     }
 }
+
+/*End Content_more2*/
