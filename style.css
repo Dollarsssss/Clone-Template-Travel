@@ -405,4 +405,102 @@ header {
 .content_mid {
     height: 800px;
     background-color: var(--bgcolor);
+    overflow: hidden;
+
+    & .container {
+
+        display: flex;
+        justify-content: center;
+        margin-top: 120px;
+
+        & .content_mid_info {
+            
+            display: flex;
+           
+            & .img_left {
+                position: relative;
+                
+                & img:nth-of-type(1) {
+                    width: 500px;
+                    height: 650px;
+                }
+
+                & img:nth-of-type(2) {
+                    position: absolute;
+                    left: -35px;
+                    top: 34%;
+                }
+            }
+
+            & .img_right {
+               
+                    margin-left: 40px;
+                
+                & .content_mid_text {
+                    
+                    display: flex;
+                    margin-top: 30px;
+
+                    & h1 {
+                        font-size: 35px;
+                        text-decoration: underline;
+                    }
+
+                    & .content_mid_lorem {
+
+                       
+                        margin-left: 30px;
+
+                        & p:nth-of-type(2) {
+                         
+                           
+                            margin-top: 20px;
+                        }
+                    }
+                  
+                }
+
+                & .arrow {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    width: 550px;
+                    height: 95px;
+                    
+
+                    & .line {
+                        margin-right: 20px;
+                        position: relative;
+                        width: 100px;
+                        height: 3px;
+                        background-color: var(--black);
+                        border-top-right-radius: 5px; 
+                    }
+
+                    & .line::before{
+                        content: "";
+                        position: absolute;
+                        top: -10.3px;
+                        right: -5px;
+                        width: 30px;
+                        height: 3px;
+                        background-color: var(--black);
+                        transform: rotate(45deg);
+
+                    }
+
+                    & .line::after {
+                        content: "";
+                        position: absolute;
+                        top: 8.8px;
+                        right: -4.7px;
+                        width: 30px;
+                        height: 3px;
+                        background-color: var(--black);
+                        transform: rotate(139deg);
+                      }
+                }
+            }
+        }
+    }
 }
