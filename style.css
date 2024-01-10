@@ -843,6 +843,7 @@ header {
 
         display: flex;
         justify-content: center;
+        flex-direction: column;
 
 
         & .content_last_info {
@@ -855,13 +856,16 @@ header {
             font-size: 100px;
          }
 
+          
+        }
 
-          & .content_grid{
-           display: grid;
-           grid-template-columns: 1fr 1fr 1fr;
-           gap: 20px;
-
+        & .content_grid{
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+            justify-items: center;
+           
             & .item{
+             
                 position: relative;
                 margin-top: 50px;
                 display: flex;
@@ -871,6 +875,7 @@ header {
                 height: 420px;
                 border: 2px solid var(--black);
                 border-radius: 10px;
+               
 
                 & .circle {
                   
@@ -962,6 +967,7 @@ header {
                     
                     margin-top: 45px;
                     & h1 {
+                        text-align: center;
                         font-size: 28px;
                     }
 
@@ -1018,8 +1024,6 @@ header {
                 }
                 
             }
-          }
         }
-
     }
 }
