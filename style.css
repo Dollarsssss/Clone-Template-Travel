@@ -686,3 +686,40 @@ header {
 }
 
 /*End Content_under*/
+
+/*Start content_last_first*/
+
+.content_last_first {
+    height: 800px;
+    background-color: var(--white);
+
+    .container {
+        outline: 1px solid red;
+
+        & .content_last_info {
+
+            display: flex;
+
+            & .content_last_text {
+               
+
+                & p {
+                    font-size: 81px;
+                }
+            }
+
+            & .img_right {
+
+                margin-left: 60px;
+
+                 & img {
+
+                    width: 390px;
+                    height: 500px;
+                 }
+             
+            }
+        }
+
+    }
+}
