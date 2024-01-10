@@ -848,12 +848,11 @@ header {
         & .content_last_info {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            border:1px solid blue;
+            
 
          & h1 {
-
-            font-size: 60px;
+            text-align: center;
+            font-size: 100px;
          }
 
 
@@ -863,19 +862,28 @@ header {
            gap: 20px;
 
             & .item{
-
+                position: relative;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
                 width: 390px;
                 height: 420px;
                 border: 2px solid var(--black);
                 border-radius: 10px;
 
                 & .circle {
+                  
                     position: relative;
-                    width: 100px;
-                    height: 100px;
+                    width: 150px;
+                    height: 150px;
                     border-radius: 50%;
                     background-color: var(--black);
-
+                    overflow: hidden;
+                    top: 20%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    
                 }
 
                 & .circle::before{
@@ -890,7 +898,125 @@ header {
                     transform: translate(-50%, -50%);
                 }
 
-        
+                
+                & .circle::after{
+                    position:absolute;
+                    content:"";
+                    width: 100px; 
+                    height: 50px; 
+                    background-color:var(--white);
+                    border-radius: 100px 100px 0 0;
+                    top: 85%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                & .box_arrow_left {
+                    background-color: var(--bgcolor);
+                    position :absolute;
+                    top: 45%;
+                    left: -40px;
+                    width: 80px;
+                    height: 70px;
+                    border: 2px solid var(--black);
+                    border-radius: 5px; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    & .arrow_left {
+                        position: relative;
+                        width: 40px;
+                        height: 3px;
+                        background-color: var(--black);
+
+                    }
+
+                    & .arrow_left::before {
+                        content: "";
+                        position: absolute;
+                        top: -9.3px;
+                        right: 18px;
+                        width: 26px;
+                        height: 3px;
+                        background-color: var(--black);
+                        transform: rotate(-45deg);
+                    
+                    }
+
+                    & .arrow_left::after{
+                        content: "";
+                        position: absolute;
+                        top: 7.7px;
+                        right: 17px;
+                        width: 26px;
+                        height: 3px;
+                        background-color: var(--black);
+                        transform: rotate(-139deg);
+                    }
+
+
+                }
+
+                & .text_info {
+                    
+                    margin-top: 45px;
+                    & h1 {
+                        font-size: 28px;
+                    }
+
+                    & p {
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+                }
+
+
+                & .box_arrow_right {
+                    background-color: var(--bgcolor);
+                    position :absolute;
+                    top: 45%;
+                    right: -40px;
+                    width: 80px;
+                    height: 70px;
+                    border: 2px solid var(--black);
+                    border-radius: 5px; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    & .arrow_right {
+                        position: relative;
+                        width: 40px;
+                        height: 3px;
+                        background-color: var(--black);
+
+                    }
+
+                    & .arrow_right::before {
+                        content: "";
+                        position: absolute;
+                        top: -9.3px;
+                        right: -3px;
+                        width: 26px;
+                        height: 3px;
+                        background-color: var(--black);
+                        transform: rotate(45deg);
+                    
+                    }
+
+                    & .arrow_right::after{
+                        content: "";
+                        position: absolute;
+                        top: 7.7px;
+                        right: -3px;
+                        width: 26px;
+                        height: 3px;
+                        background-color: var(--black);
+                        transform: rotate(139deg);
+                    }
+                }
+                
             }
           }
         }
