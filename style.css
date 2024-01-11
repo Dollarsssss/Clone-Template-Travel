@@ -1125,3 +1125,54 @@ header {
 
     }
 }
+
+@media screen and (max-width: 480px) {
+
+    .content_last_three {
+        height: auto;
+
+        & .container {
+            max-width: 420px;
+
+            & .content_last_info {
+               
+                display: flex;
+                flex-direction: column;
+               
+
+                & .content_form {
+
+             
+                    & form {
+                        align-items: center;
+                        margin-left: 0px;
+                        
+                        & h1 {
+                            font-size: 70px;
+                            
+                        }
+
+                        & input[type="text"] ,input[type="submit"] ,textarea {
+                            width: 100%;
+                          
+                        }
+
+
+                    }
+
+                }
+
+                & .img_right {
+                    height: auto;
+                    margin: 40px 0px;
+                    max-width: 420px;
+
+                    & img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+}
