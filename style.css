@@ -838,6 +838,8 @@ header {
     background-color: var(--bgcolor);
     background-image: url(html-template-travel/assets/img/bg_section_7.png);
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     & .container {
 
@@ -1302,7 +1304,7 @@ footer {
                                 border: 2px solid var(--black);
                                 border-radius: 5px;
 
-                                & p {
+                                & p {   
                                     font-size: 18px;
                                     padding: 0px 20px;
                                     margin-bottom: 20px;
